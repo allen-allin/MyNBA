@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>那些年的NBA</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {padding-top: 50px;padding-bottom: 50px;}
+    .carousel {height: 700px;background-color: black;margin-bottom: 60px;}
+    .carousel .item {height: 700px;background-color: black}
+    .carousel img {width: 100%;}
+    .carousel .carousel-caption p {margin-bottom: 20px;font-size: 20px;line-height: 1.8;}
+    #summary-container .col-md-4 {text-align: center;}
+    .divider {margin: 40px 0;background: black;}
+    .feature {padding: 30px 0;}
+    .feature-heading{font-size: 50px;color: #246496;margin-top: 120px;}
+    .feature-heading .text-muted{font-size: 28px;color: gray}
+  </style>
+  </head>
+  <body>
+  <!-- 导航条，navebar 表示这是一个导航条，navbar-default表示默认样式 -->
+  <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <!-- 容器，container-fluid表示自适应 ,container表示居中-->
+    <div class="container">
+    <!-- 导航条头部 -->
+      <div class="navbar-header">
+        <!-- 响应式：当屏幕宽度较小时变成一个导航图标 -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar">
+          <span class="sr-only">综述</span>
+          <span class="icon-bar">简述</span>
+          <span class="icon-bar">特点</span>
+          <span class="icon-bar">关于</span>
+        </button>
+        <a class="navbar-brand" href="#">那些年的NBA：西科东艾，北卡南麦</a>
+      </div>
+      <!-- 响应式：当屏幕宽度较小时点击导航图标弹出的内容 -->
+      <div class="collapse navbar-collapse" id="demo-navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">综述</a></li>
+          <!-- 下拉菜单 -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">特点
+            <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#tab-chrome">麦迪</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#tab-firefox">艾弗森</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#tab-opera">科比</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#tab-safari">卡特</a></li>
+                <!-- 分割线 -->
+                <!-- <li class="divider"></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li> -->
+            </ul>
+          </li>
+          <li><a href="#">简述</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#about">关于</a></li>
+        </ul>
+      </div>
+  </nav>
+  <!-- 轮播插件 -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- 中间表示顺序的点 -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- 轮播的内容 -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="http://www.xitong1.com/uploads/allimg/c130220/13613AE1420-4C53.jpg" alt="...">
+      
+    </div>
+    <div class="item">
+      <img src="http://p3.pstatp.com/origin/e920004547def44af9f" alt="...">
+      
+    </div>
+    <div class="item">
+      <!-- 图片 -->
+      <img src="http://image.tianjimedia.com/uploadImages/2012/153/58443NS2930O_31.jpg" alt="...">
+      
+    </div>
+    <div class="item">
+      <img src="http://www.desktopwallpaperhd.net/wallpapers/9/5/vince-wallpapers-carter-vinsanity-best-times-deportes-widescreen-puntos-comentarios-espero-98613.jpg" alt="...">
+      
+    </div>
+ 
+
+  <!-- 左右控制 -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">上一页</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">下一页</span>
+    </a>
+  </div>
+</div>
+
+<!-- 简介 -->
+ <div class="container summary">
+    <div class="row" id="summary-container">
+      <div class="col-md-3">
+        <img class="img-circle" src="http://m.wanhuajing.com/pic/1603/1110/1301443/o_160.jpg" alt="chrome">
+        <h2>Tracy-McGrady</h2>
+        <p>麦迪，NBA历史上天赋最强球员。</p>
+        <p><a class="btn btn-default" href="#" role="button">点我查看详情</a></p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="http://m.wanhuajing.com/pic/1510/2908/2316061/o_160.jpg" alt="firefox">
+        <h2>Allen-Iverson</h2>
+        <p>艾弗森，绰号“答案”,96黄金一代状元。</p>
+        <p><a class="btn btn-default" href="#" role="button">点我查看详情</a></p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="http://mvimg2.meitudata.com/570f15671f8a43614.jpg!thumb140" alt="safari">
+        <h2>Kobe-Bryant</h2>
+        <p>科比，绰号“黑曼巴”，5届NBA总冠军。</p>
+        <p><a class="btn btn-default" href="#" role="button">点我查看详情</a></p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="http://m.wanhuajing.com/pic/1604/1911/2147109/o_160.jpg" alt="safari">
+        <h2>Vince-Carter</h2>
+        <p>卡特，NBA名副其实的扣篮王。</p>
+        <p><a class="btn btn-default" href="#" role="button">点我查看详情</a></p>
+      </div>
+    </div>
+    <hr class="divider"> 
+      <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist" id="tab-list">
+      <li role="presentation" class="active"><a href="#tab-chrome" role="tab" data-toggle="tab">麦迪</a></li>
+      <li role="presentation"><a href="#tab-firefox" role="tab" data-toggle="tab">艾弗森</a></li>
+      <li role="presentation"><a href="#tab-safari" role="tab" data-toggle="tab">科比</a></li>
+      <li role="presentation"><a href="#tab-opera" role="tab" data-toggle="tab">卡特</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab-chrome">
+        <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Tracy McGrady <span
+                            class="text-muted">打球最飘逸的男人</span></h2>
+
+                    <p class="lead">关键词：35秒13分，干拔三分，飘逸，全面<br><br>
+                    上帝给了他35秒13分的神迹，却从来没有给他一次进入季后赛第二轮的机会；上帝给了他空前绝后的篮球天赋，却没有给他一个健康的身体。这也许就是天妒英才吧。</p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484737212578&di=3982ac686f2ec32e038f8beb65330e1a&imgtype=0&src=http%3A%2F%2Fiii.3b2o.com%2Fimg%2Fshow%2Fsid%2FJmZAjzdcx8L%2Fw%2F500%2Fh%2F1000%2Ft%2F0%2Fshow.jpg"
+                         alt="Chrome">
+                </div>
+            </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab-firefox">
+        <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484737085950&di=af2d2f7be99734207093f67597b666bc&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fforum%2Fw%253D580%253Bcp%253Dtieba%252C10%252C468%253Bap%253D%25D0%25A2%25B8%25D0%25D1%25A7%25D4%25BA%25B0%25C9%252C90%252C476%2Fsign%3Dbd3c94fb8b82b9013dadc33b43b6ca07%2F5e548735e5dde711e22ffc2aa6efce1b9c166127.jpg"
+                         alt="Firefox">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Allen Iverson <span class="text-muted">孤胆英雄</span>
+                    </h2>
+
+                    <p class="lead">关键词：crossover，蝴蝶穿花，脚踝终结者，东部冠军<br><br>
+                    我心中最完美的答案，影响了一代人，他在NBA的贡献不止是体现在球场上，将嘻哈文化带进NBA，让人们知道篮球并不是巨人的运动，让更多身材矮小的孩子对篮球重燃希望，这才是答案的意义所在。</p>
+                </div>
+            </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab-safari">
+        <div class="row feature">
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Kobe Bryant <span class="text-muted">偏执狂超级巨星</span></h2>
+
+                    <p class="lead">关键词：洛杉矶凌晨4点钟的太阳，后仰无解，单场81分，总冠军<br><br>
+                    有多少人恨他，就有多少人爱他。96黄金一代中成就最高的一位，对胜利的渴望超乎常人，无论你爱他还是恨他，当他离开的时候，都一定会想念他。
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1485331596&di=ac34ed766383096f743c2336766bc0c1&imgtype=jpg&er=1&src=http%3A%2F%2Fimg2.xiukee.com%2Fupload%2F2015%2F5%2F8%2F3579850535.jpg%40100q.jpg"
+                         alt="Safari">
+                </div>
+            </div>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab-opera">
+         <div class="row feature">
+                <div class="col-md-5">
+                    <img class="feature-image img-responsive" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1484736746808&di=92d59995944e3a53c0a9bf7393fc60a8&imgtype=0&src=http%3A%2F%2Fs2.cdn.deahu.com%2Fjingyan%2Fimage_cluster%2F2015-01-29%2F17%2F3933121_713876CF158664E9DFCD5F635D3A5039.jpg"
+                         alt="Opera">
+                </div>
+                <div class="col-md-7">
+
+                    <h2 class="feature-heading">Vince Carter<span class="text-muted">不是其他不行，而是扣篮太强</span>
+                    </h2>
+
+                    <p class="lead">关键词：扣篮王，UFO，半人半神<br><br>
+                    仅凭扣篮，卡特是第一个和神并肩的飞人。卡特的扣篮翱翔天际，欲与天公试比高。“死亡之扣”让法国中锋第二天就宣布退役。除了扣篮，“加拿大飞人”同时拥有出色的突破、投射和助攻能力。</p>
+                </div>
+            </div>
+      </div>
+
+    </div>
+    <hr class="divider"> 
+    <footer>
+      <p class="pull-right"><a href="#top">回到顶部</a></p>
+    </footer>
+  </div>
+
+<div class="modal fade" id="about">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">关于</h4>
+      </div>
+      <div class="modal-body">
+        <p>个人爱好</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+  <script src="js/jquery-3.1.1.min.js"></script>   
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function (){
+      $('#demo-navbar .dropdown-menu a').click(function (){
+        var href=$(this).attr('href');
+        $("#tab-list a[href='"+href+"']").tab('show')
+      })
+    })
+  </script>
+  </body>
+</html>
